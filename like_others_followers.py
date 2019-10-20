@@ -44,7 +44,7 @@ targets = ['sadhguru', 'deepikamehtayoga', 'yoga.guide', 'sadhgurus_quotes',
 
 """ Skip all business accounts, except from list given...
 """
-target_business_categories = ['Artist', 'Public Figure']
+target_business_categories = ['Artist', 'Public Figure', 'Creators & Celebrities']
 
 # COMMENT data
 comments = ['Nice shot! @{}',
