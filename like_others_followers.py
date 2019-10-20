@@ -21,12 +21,8 @@ dont_likes = ['sex', 'nude', 'naked', 'beef', 'pork', 'seafood',
               'breakfast', 'dinner', 'lunch']
 
 
-like_tag_list = [u'vegan', u'veganfoodshare', u'veganfood', u'whatveganseat',
-                 u'veganfoodie', u'veganism', u'govegan',
-                 u'veganism', u'vegansofig', u'veganfoodshare', u'veganfit',
-                 u'veggies', u'yoga', u'sadhguru', u'meditation', u'yogisofinstagram', u'spiritual', u'spiritualquotes',
-                 u'yogachallenge', u'isha', u'hathayoga', u'yogini', u'igyoga', u'yogalove', u'yogainternational',
-                 u'practiceandalliscoming', u'spiritualquotes', u'spiritual', u'meditation', u'travelcouples']
+like_tag_list = [u'sadhguru', u'sadhguruquotes', u'innerengineering',
+                 u'yogisofinstagram', u'travelcouples', u'spiritualcouples']
 
 # ignore_users = ['user1', 'user2', 'user3']
 
@@ -42,7 +38,7 @@ ignore_list = []
 # TARGET data
 """ Set similar accounts and influencers from your niche to target...
 """
-targets = ['sadhguru', 'deepikamehtayoga', 'yoga.guide', 'sadhgurus_quotes', 'sadhguru_quotes'
+targets = ['sadhguru', 'deepikamehtayoga', 'yoga.guide', 'sadhgurus_quotes',
            '_hananelazaar', 'spiritdaughter', 'awake_spiritual', 'thetravelduos', 'creativetravelcouples',
            'thetwobohemians', 'findingmorgantyler', 'chelseasyoga', 'jacobmanningyoga']
 
@@ -120,7 +116,7 @@ with smart_run(session):
     else:
         random_targets = random.sample(targets, number)
 
-    session.interact_user_followers(targets, amount=3, randomize=True, percentage=80)
+    session.interact_user_followers(targets, amount=3, randomize=True, percentage=100)
 
     # """ Interact with the chosen targets...
     # """
